@@ -1,10 +1,11 @@
 package com.zx.ssm.mapper;
 
+import com.zx.ssm.annotation.MyBatisDao;
 import com.zx.ssm.entity.User;
 import com.zx.ssm.entity.UserExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
-
+@MyBatisDao
 public interface UserMapper {
     int countByExample(UserExample example);
 

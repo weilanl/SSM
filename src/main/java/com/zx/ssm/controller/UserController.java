@@ -27,7 +27,6 @@ public class UserController {
     @RequestMapping("/findUser")
     public ModelAndView findUser() throws Exception {
         ModelAndView modelAndView = new ModelAndView();
-
         //调用service方法得到用户列表
         List<User> users = userService.findUser();
         //将得到的用户列表内容添加到ModelAndView中
