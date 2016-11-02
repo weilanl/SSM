@@ -8,6 +8,9 @@
         <result column="sex" property="sex" jdbcType="CHAR"/>
         <result column="address" property="address" jdbcType="VARCHAR"/>
     </resultMap>
+    <select id="findOne" resultMap="BaseResultMap">
+        SELECT * FROM USER limit 1;
+    </select>
     <sql id="Example_Where_Clause">
         <where>
             <foreach collection="oredCriteria" item="criteria" separator="or">

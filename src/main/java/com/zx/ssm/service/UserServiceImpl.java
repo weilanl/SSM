@@ -17,4 +17,7 @@ public class UserServiceImpl implements UserService {
     public List<User> findUser() {
         return userMapper.selectByExample(null);
     }
+    public User findOne(){
+        return userMapper.findOne();
+    }
 }
